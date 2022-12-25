@@ -1,0 +1,90 @@
+Ex no-2
+1.Exchange of two values
+(i)using naïve approach (by introducing third variable temp)
+Python program 
+x=10
+y=50
+temp=x
+x=y
+y=temp
+print("Value of x:",x)
+print("Value of y:”,y)
+Output  
+Value of x: 50
+Value of y: 10
+
+(ii) using comma(,) operator 
+Python program
+X=10
+Y=50
+X,y=y,x
+Print(“Value of x:”,x)
+Print(“Value of y:”,y)
+Output
+Value of x:50
+Value of y:10
+
+(iii)using arithmatic operator 
+Python program 
+X=10
+Y=50
+X=x+y
+Y=x-y
+X=x-y
+Print(“Value of x:”,x)
+Print(“Value of y:”,y)
+Output
+Value of x:50
+Value of y:10
+
+(iv)using XOR operator 
+python program 
+X=10
+Y=50
+X=x^y
+Y=x^y
+X=x^y
+Print(“Value of x:”,x)
+Print(“Value of y:”,y)
+Output
+Value of x:50
+Value of y:10
+
+2.Circulating the list of values
+(i)using in built functions
+Python program 
+test_list=[1,4,6,7,2]
+Print(“Original list :”+str(test_list))
+test_list=[test_list[(i+3)%len(test_list)]for i,x in enumerate 
+          (test_list)]
+Print(“list after left rotate by 3:”+str(test_list))
+Test_list=[test_list[(i-3)%len(test_list)]for I,x in            
+          enumerate(test_list)]
+print(“list after right rotate by 3(back to original):”+str(test_list))
+Output
+Original list:[1,4,6,7,2]
+List after left rotate by 3:[7,2,1,4,6]
+List after right rotate by 3(back to original):[1,4,6,7,2]
+
+(ii)using slicing operator 
+Python program 
+n=3
+list_1=[1,2,3,4,5,6]
+list-1=(list_1[len(list_1)-n:len(list_1)]+list_1[0:len(list_1)-                           n])
+print(list_1)
+Output
+[4,5,6,1,2,3]
+
+
+3.Calculate the distance between two points
+Python program
+P1=[4,0]
+P2=[6,6]
+distance=math.sqrt(((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))
+Print(distance)
+Output
+6.324555320336759
+
+
+
+
