@@ -1,3 +1,0 @@
-- 👋 Hi, I’m kanishka P
-- 🌱 I’m currently learning ...
-- Velammal Engineering college
