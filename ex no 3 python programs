@@ -1,0 +1,53 @@
+ex no 3
+1.biggest three numbers
+python program
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+c=int(input("enter third number:"))
+largest=0
+if a>b and a>c:
+    largest=a
+elif b>c:
+    largest=b
+else:
+    lagest=c
+print("the largest three number is ",largest)
+output
+enter first number:3
+enter second number:2
+enter third number:1
+the largest three number is  3
+
+2.odd/even numbers
+python program
+num=int(input("enter a number:"))
+if (num%2)==0:
+    print("{0} is even number".format(num))
+else:
+    print("{0} is odd number".format(num))
+output
+enter a number:2
+2 is even number
+
+3.student grade analysis
+python program
+m1=int(input("enter mark in first subject:"))
+m2=int(input("enter mark in second subjest:"))
+avg=(m1+m2)/2
+if avg>=90:
+    print("grade:O")
+elif avg>=80 and avg<90:
+    print("grade:A+")
+elif avg>=70 and avg<80:
+    print("grade:A")
+elif avg>=60 and avg<70:
+    print("grade:B+")
+elif avg>=50 and avg<60:
+    print("grade:B")
+else:
+    print("grade:U")
+output
+enter mark in first subject:33
+enter mark in second subjest:74
+grade:B
+    
