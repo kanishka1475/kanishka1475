@@ -1,0 +1,61 @@
+pratice program
+1.biggest three numbers
+
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+c=int(input("enter third number:"))
+largest=0
+if a>b and a>c:
+    largest=a
+elif b>c:
+    largest=b
+else:
+    lagest=c
+print("the largest three number is ",largest)
+
+2.odd/even numbers
+
+num=int(input("enter a number:"))
+if (num%2)==0:
+    print("{0} is even number".format(num))
+else:
+    print("{0} is odd number".format(num))
+
+3.student grade analysis
+
+m1=int(input("enter mark in first subject:"))
+m2=int(input("enter mark in second subjest:"))
+avg=(m1+m2)/2
+if avg>=90:
+    print("grade:O")
+elif avg>=80 and avg<90:
+    print("grade:A+")
+elif avg>=70 and avg<80:
+    print("grade:A")
+elif avg>=60 and avg<70:
+    print("grade:B+")
+elif avg>=50 and avg<60:
+    print("grade:B")
+else:
+    print("grade:U")
+
+4.voting eligibility
+a=int(input("enter the age:"))
+if(a>=18):
+    print("eligible for voting")
+else:
+    print("not eligible for voting")
+5.uppercase and lowercase
+a=input("enter a character:")
+if (a>="A" and a<="Z"):
+    print("enter uppercase character")
+else:
+    print("enter iowercase character")
+6.rule of quaratic 
+a=1
+b=5
+c=6
+d=(b**2)-(4*a*c)
+sol1=(-b-cmath.sqrt(d))/(2*a)
+sol2=(-b+cmath.sqrt(d))/(2*a)
+print('solution are {0} and {1}'.format(sol1,sol2))
