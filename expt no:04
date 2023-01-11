@@ -1,0 +1,96 @@
+EXPT NO:04
+1.number series
+i)Write a program to find the sum of series 1/2!+2/3!+3/5!+4/6!+.....N/(N+1)!
+python program
+def printSeriesSum(N) :   
+    sum = 0;
+    for i in range(1, N + 1) :
+        if (i & 1) :
+            sum += i / (i + 1);
+        else :
+            sum -= i / (i + 1);
+    print(sum);
+if __name__ == "__main__" :
+    N = 10;
+    printSeriesSum(N);
+output
+-0.2634559884559883
+ii)Write a Program to print the Fibonacci series.
+python program
+nterms=int(input("how many terms?"))
+n1,n2=0,1
+count=0
+if nterms <= 0:
+    print("please enter a positive integer")
+elif nterms==1:
+    print("fibonacci sequence upto",nteams,":")
+    print(n1)
+else:
+    print("fibonacci sequence:")
+    while count < nterms:
+        print(n1)
+        nth = n1+ n2
+        n2=nth
+        count+= 1
+output
+how many terms? 7
+fibonacci sequence:
+0
+0
+0
+0
+0
+0
+0
+
+2.Number Pyramid - Inverted Pyramid pattern with the same digit
+python program
+rows = 5
+num = rows
+for i in range(rows,0,-1):
+    for j in range(0,i):
+        print(num,end=' ')
+    print("\r")
+output
+5 5 5 5 5 
+5 5 5 5 
+5 5 5 
+5 5 
+5 
+
+3.Pyramid Pattern - Right down mirror star Pattern
+python program
+rows = 5
+i = rows
+while i >= 1:
+    j = rows
+    while j > i:
+        # display space
+        print(' ', end=' ')
+        j -= 1
+    k = 1
+    while k <= i:
+        print('*', end=' ')
+        k += 1
+    print()
+    i -= 1
+output
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+     
+4.Reversing a Number
+python program
+num = 1234
+reversed_num=0
+while num!=0:
+    digit = num % 10
+    reversed_num = reversed_num*10 + digit
+    num//=10
+print("reversed number:"+str(reversed_num))
+output
+reversed number:4321
+
+
