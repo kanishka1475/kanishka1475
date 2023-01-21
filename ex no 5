@@ -1,0 +1,69 @@
+Common to all 
+1.Return the full name of the Person( first name, last name) using function
+PROGRAM 
+def name(x,y):
+    z=x+y
+    print(z)
+first=(input("Enter first name:"))
+second=(input("Enter second name:"))
+print(first,second)
+OUTPUT:
+Enter first name:kanishka
+Enter second name:pal
+kanishka pal
+
+2.write a python program to convert time hours into minutes
+PROGRAM
+def convert(h):
+    return h*60
+h=float(input("enter time in hours:"))
+print("hours into minutes is:",convert(h))
+OUTPUT
+enter time in hours:7
+hours into minutes is: 420.0
+
+3.check the relationship between two numbers( > ,< or = ) using function 
+PROGRAM
+def relation(no1,no2):
+    x=no1>no2
+    y=no1<no2
+    z=no1==no2
+    return x,y,z
+a=int(input("enter the first number:"))
+b=int(input("enter the second number:"))
+print(relation(a,b))
+output
+enter the first number:6
+enter the second number:5
+(True, False, False)
+
+4.define a function to find the min of two numbers
+funtion:
+       A function is a block of code which only runs when it is called. You can pass data, 
+       known as parameters, into a function.
+def minimum(a, b):
+    if a <= b:
+        return a
+    else:
+        return b
+a = 2
+b = 4
+print(minimum(a, b))
+OUTPUT
+2
+
+5.Print the area and Perimeter of Square  using Function
+PROGRAM
+def area(a, b):
+    return (a * b)
+def perimeter(a, b):
+    return (2 * (a + b))
+l = float(input("Enter length: ")) 
+b = float(input("Enter breadth: ")) 
+print ("Area = ", area(l, b))
+print ("Perimeter = ", perimeter(l, b))
+OUTPUT
+Enter length: 7
+Enter breadth: 6
+Area =  42.0
+Perimeter =  26.0
