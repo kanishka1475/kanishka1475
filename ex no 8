@@ -1,0 +1,58 @@
+1.divide by zero
+program
+a=int(input('Enter the first number:'))
+b=int(input('Enter the second number : '))
+c=int(input('Enter the third number : '))
+try:
+        q=a/ (b-c)
+        print('quotient : ',q)
+except  ZeroDivisionError:
+          print('Division by Zero:')
+output 
+Enter the first number : 5
+Enter the second number : 5
+Enter the third number : 5
+Division by Zero!
+
+2.Voter's age validity
+program
+try:
+    age=int(input("enter your age :"))
+    if age>18:
+        print("eligible to vote")
+    else:
+            print("not eligible to vote")
+except valueerror as err:
+    print(err)
+else:
+    print("thank you, you have successfully checked the voting eligibility")
+output
+enter your age :21
+eligible to vote
+thank you, you have successfully checked the voting eligibility
+
+3.Student mark range validation
+program
+try:
+    mark=int(input("enter your mark:")
+    if mark>90
+             print("your grade is o- outstanding performer")
+    elif 90<=mark>80:
+             print("Your grade is A+ - Excellent Performer")
+    elif 80<=mark>70:
+             print("Your grade is A - Very Good Performer")
+    elif 70,=mark>60:
+             print("Your grade is B+ - Good Performer")
+    elif 60<=mark>50:
+             print("Your grade is B - Average")
+except ValueError as err:
+        print(err)
+finally:
+  print("Thank you, you have successfully verified about your course Grade")
+output
+Enter your mark : 99
+Your grade is O - Outstanding Performer
+Thank you, you have successfully verified about your course Grade
+
+
+
